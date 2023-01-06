@@ -8,24 +8,26 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container container-margin">
-        <header>
-            <div class="header__logo">
-                <img src="./images/Logo.svg" alt="Logo Alura">
-            </div>
-        </header>
-        <div class="container__input-output container-margin">
+    <header>
+        <div class="header__logo">
+            <img src="./images/Logo.svg" alt="Logo Alura">
+        </div>
+    </header>
+    <div class="container__message">
+        <img src="./images/Muñeco.svg" alt="Muñeco">
+        <h3>Ningún mensaje fue encontrado</h3>
+        <p>Ingresa el texto que desees encriptar o desencriptar</p>
+    </div>
+
+    <div class="container">
             <div class="container__text">
                 <textarea placeholder="Ingrese el texto aquí"></textarea>
             </div>
-    
-            <div class="container__message">
-                <img src="./images/Muñeco.svg" alt="Muñeco">
-                <h3>Ningún mensaje fue encontrado</h3>
-                <p>Ingresa el texto que desees encriptar o desencriptar</p>
+            <div class="container__options">
+                <p class="container__options-text"><img src="./images/bi_exclamation-circle-fill.svg" alt=""> Solo letras minúsculas y sin acentos</p>
+                <button class="btn-encriptar">Encriptar</button>
+                <button class="btn-desencriptar">Desencriptar</button>
             </div>
-
-        </div>
     </div>
 </body>
 </html>
