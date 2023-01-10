@@ -68,20 +68,66 @@ header{
     background-color: #FFFFFF;
     border-radius: 32px;
     margin-right: 40px;
-    height: 70vh;
+    width: 20vw;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+.container__message-text{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 20px;
+    display: none;
+    /* background-color: red; */
 }
 
-.container__message > img{
-    width: 20vw;
-    margin-top: 25px;
+.container__message-text > textarea{
+    width: 100%;
+    height: 550px;
+    font-family: var(--font-family);
+    color: #495057;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2vw;
+    line-height: 150%;
+    outline: none;
+    border: none;
 }
 
-.container__message > h3{
+.container__message-text > button{
+    background-color: #FFFFFF;
+    font-size: 2vmin;
+    width: 100%;
+    height: 3vw;
+    box-sizing: border-box;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+
+.container__message-no__message{
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.container__message-no__message > img{
+    width: 100%;
+    margin-top: 5vw;
+}
+
+.container__message-no__message > h3{
     font-style: bold;
     font-size: 1.5vw;
     font-weight: 700;
@@ -90,7 +136,7 @@ header{
     text-align: center;
 }
 
-.container__message > p{
+.container__message-no__message > p{
     font-size: 1vw;
     text-align: center;
     margin-top: 10px;
@@ -142,35 +188,54 @@ header{
 @media (max-width: 750px) {
     .container{
         flex-direction: column;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0 10px;
+        /* background-color: red; */
     }
 
     .container__text{
+        margin-top: 2vh;
         width: 100%;
         padding: 0;
+        height: 60vw;
     }
 
     .container__text > textarea{
-        font-size: 13px;
+        font-size: 5vw;
     }
     .container__message{
+        width: 100%;
+        margin-top: 8vh;
         height: auto;
-        margin: 7vh 10px;
-        padding: 40px;
     }
-    .container__message > img{
+    .container__message-no__message > img{
         display: none;
     }
 
-    .container__message > h3{
+    .container__message-no__message > h3{
         font-size: 15px;
     }
 
-    .container__message > p{
+    .container__message-no__message > p{
         font-size: 12px;
+    }
+
+    .container__message-text{
+        width: 100%;
+    }
+    .container__message-text > textarea{
+        font-size: 5vw;
+        height: 25vw;
+    }
+    .container__message-text > button{
+        width: 100%;
+        height: 40px;
+        font-size: 3vw;
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
     .container__text{
         height: 250px;
     }
